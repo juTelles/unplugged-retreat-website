@@ -1,0 +1,68 @@
+-header
+    -img -> logo
+    -div -> divider(line)
+    -nav -> nav-bar
+        -ul
+            -li a -> FAQ
+            -li a -> ABOUT
+-main
+    -section -> headline    
+        -div -> hero
+        -h1 -> heading
+        -background -> hero
+    -section -> newsletter
+        -div -> sign-up
+            -h3
+            -p
+        -div -> form
+            -h3
+            -form
+            -div a -> buttom
+                -a
+    -section -> info
+        -h2 -> headline
+        -img -> bungalow
+        -p
+        -img -> bed
+        -p
+        -img -> food
+        -p
+        -img -> shoes
+        -p
+        -img -> smile
+        -p
+        -img -> wifi
+        -p
+    -section -> previous-retreats
+        -h2
+        -img
+        -h3
+        -p
+        
+-footer
+    -div -> contact
+        -h3
+        -h4
+        -a -> email
+    -div -> social
+        -ul
+            -li img a -> facebook
+            -li img a -> twitter
+            -li img a -> instagram 
+    -div -> copyright
+        -h4 -> copyright
+
+
+
+
+
+
+    h1
+
+    h2
+
+    h3
+
+    h4
+
+    p
