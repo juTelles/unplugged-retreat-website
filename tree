@@ -38,7 +38,6 @@
         -img
         -h3
         -p
-        
 -footer
     -div -> contact
         -h3
@@ -52,17 +51,41 @@
     -div -> copyright
         -h4 -> copyright
 
+ABOUT-page
 
+-main
+    -section -> mission-area
+        -div -> content wrapper
+            -div -> mission content
+                h1 -> headlline
+                p 
+    -section -> map
+    -section -> contact-info
+        div -> content-wrapper
+            div -> contact-info-content
+                h2 -> headline
+                h3
+                p
+                h3
+                p
 
+FAQ-page
 
+-main
+    section -> quetions-area
+     div -> content-wrapper
+        div -> headline
+            h1
+        div -> question
+            h3
+            p
+        div -> question
+            h3
+            p
+        div -> question
+            h3
+            p
+        div -> question
+            h3
+            p
 
-
-    h1
-
-    h2
-
-    h3
-
-    h4
-
-    p
