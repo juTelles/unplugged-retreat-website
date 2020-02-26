@@ -95,9 +95,343 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   BASE STYLES
    ========================================================================== */
 
+html {
+    font-size: 16px;
+}
+body {
+    background-color: #527158;
+    color: #e2e3ed;
+    font-size: 1em; /*16px*/
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    width: 100%; /*360px*/
+}
+.content-wrapper {
+    width: 90%; /*324px around 33px each side*/
+    padding: 3.125em 0; /*50px 0*/
+    font-size: 1em; /*16px*/
+}
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+h1 {
+    font-size: 2.25em; /*36px*/
+    line-height: 0.84em; /*30px*/
+}
+h2 {
+    font-size: 1.875em; /*30px*/
+    line-height: 1em; /*30px*/
+}
+h3 {
+    font-size: 1.125em; /*18px*/
+    margin-bottom: 1em; /*18px*/
+    line-height: 1em; /*18px*/
+}
+p {
+    font-size: 0.875em; /*14px*/
+    margin: 0;
+    line-height: 1.125; /*18px*/
+}
+img {
+    width: 100%; /*100% of its parent*/
+}
+figure {
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #e2e3ed;
+}
+address {
+    font-style: normal;
+    color: #e2e3ed;
+}
+
+/* ------------------------- Mobile Styles --------------------------- */
+
+/* ----Header & Footer all pages  ----- */
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #202322;
+}
+
+/*---Header styles----*/
+
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    width: 100%; /*360px*/
+    padding: 1em 0; /*16px 0*/
+
+}
+header figure {
+    width: 61%; /*219.6px --> around 221px in psd*/
+    max-width: 250px;
+}
+header .divider {
+    width: 100%; /*360px*/
+    height: 1px;
+    margin: 0.625em 0 1em 0; /*10px 0 16px 0*/
+    background-color: gray;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 45%; /*161px*/
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /*161px*/
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color:#e2e3ed;
+    font-weight: bold;
+    font-size: 1.125em; /*18px*/
+    flex-shrink: 1;
+}
+
+/*---footer styles----*/
+
+footer .content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 55%; /*198px -> around 200 in psd*/
+    text-align: center;
+    flex-flow: row wrap;
+}
+footer .footer-content {
+    width: 100%;
+}
+
+footer .address-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /*198px*/
+    margin-bottom: 2.75em; /*44px*/
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+footer .social h3 {
+    width: 100%;
+}
+footer .social-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /*198px*/
+    max-width: 200px;
+}
+footer .social-content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+footer .social-content a i {
+    font-size: 1.125em; /*18px*/
+}
+footer .copyright {
+    width: 100%; /*198px*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em; /*8px*/
+}
+footer .copyright p {
+    width: 60%; /*216px*/
+    text-align: center;
+}
+
+
+  /* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
+  
+    /* -----Hero Section------*/
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background: url(../img/jake-melara-30679-unsplash.png) no-repeat center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+    /* -----Form Section------*/
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+aside .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top: 1.5em;
+}
+aside .form-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 2em; /*32px*/
+}
+aside .form-input-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+aside input {
+    width: 100%;
+}
+.email-space {
+    padding: 1em 0.9em; /*16px 14px*/
+    font-style: italic;
+    color: #9d9ea4;
+    background-color: #e1e2ea;
+    border: none;
+}
+.buttom {
+    background-color: #2a423a;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em; /*18px*/
+    font-weight: normal;
+    padding: 1em; /*18px*/
+    color: #e2e3ed;
+    margin-top: 1em; /*18px*/
+}
+
+/* -----Features Section------*/
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: url(../img/rawpixel-800820-unsplash1.png) no-repeat center;
+    background-size: cover;
+}
+.features-content {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+    padding-top: 2em; /*32px*/
+}
+.features article {
+    width: 60%; /*194.4px -> 60% from 324px*/
+    margin: 2em 3em 0.5em 3em; /*32px 48px 8px 48px;*/ 
+}
+.features article p i {
+    font-size: 3.75em; /*60px*/
+    margin: 0.16em 0 0.66em 0; /*10px 0 40px 0;*/
+}
+
+/* -----Reviews Section------*/
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color:#2a423a;
+}
+.reviews .reviews-content {
+    padding-top: 1.5em ; /*24px*/
+}
+.reviews-content figure {
+    width: 100%; /*324px*/
+    margin: 0;
+}
+.reviews h3 {
+    width: 50%; /*162px*/
+    margin: 1.125em 0 1.5em 0;/*18px 0 24px 0;*/
+}
+
+/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+  
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+.mission-content p {
+    margin-top: 1.25em; /*20px*/     
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+.contact-infos {
+    margin-top: 1.125em; /*18px*/
+} 
+
+/* ==========================================================================
+FAQ PAGE
+========================================================================== */
+  
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.faq-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.questions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: wrap;
+    margin-top: 2.625em; /*42px*/
+}
+.questions h3{
+    line-height: 24px;
+    margin-bottom: 0.5em; /*9px*/
+}
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -182,11 +516,186 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+   ****Media Queries for Responsive Design.*****
+   
+========================================================================== */
+  
+/****************************Tablet Styles****************************/
+@media only screen and (min-width: 768px) {
 
+  /* ====================== BASE STYLES======================= */
+.content-wrapper {
+  padding: 100px 0;
+  width: 85%;
+}
+h1 {
+  font-size: 48px;
+  line-height: 48px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 48px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+  /* ================== Header & Footer - all pages ======================= */
+
+    /* ----Tablet Header-----*/
+header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+header nav{
+  width: 20%;
+}
+header nav ul {
+    justify-content: space-between;
+}
+.divider {
+    display: none;
+}
+/* -----Tablet Footer------*/
+footer .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 65%; /*198px -> around 200 in psd*/
+    text-align: center;
+    flex-flow: row wrap;
+} 
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+footer .address-content {
+    margin-bottom: 0; /*44px*/
+}
+footer h3 {
+   margin-bottom: 38px;
+}
+
+  /* ================== tablet homepage styles ======================= */
+
+  /*----- Tablet Hero Area------*/
+.hero {
+  min-width: 600px;
+}
+  
+ /*------- Tablet Aside ------- */
+aside .content-wrapper {
+  padding: 50px 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  margin: 0;
+}
+aside .form-content, aside .form-input-content {
+  width: 45%;
+  margin: 0;
+}
+/* -----Tablet Features Section------*/
+.features-content {
+    padding: 0;
+}
+
+.features article {
+    width: 33%; /*194.4px -> 60% from 324px*/
+}
+
+.features article p i {
+    font-size: 72px; /*60px*/
+}
+/* -----Tablet Reviews------*/
+
+.reviews .content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-flow: row wrap;
+}
+.reviews .content-wrapper h2 {
+    width: 80%;
+}
+.reviews article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.reviews article figure {
+    min-width: 290px;/*324px*/
+    margin-right: 15px;
+}
+.reviews h3 {
+    width: 80%; /*162px*/
+    margin: 0 0 16px 0;
+}
+
+/* ----------------------- Desktop Styles ---------------------------- */
+    
+@media only screen and (min-width: 1200px) {
+
+    /* ====================== BASE STYLES======================= */
+
+.content-wrapper {
+  width: 80%;
+  padding: 30px 120px;
+}
+h1 {
+  font-size: 60px;
+  line-height: 60px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 48px;
+}
+h3 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+  /* ================== Header & Footer - all pages ======================= */
+
+    /* ----Tablet Header-----*/
+header .content-wrapper {
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+header nav{
+  width: 20%;
+}
+header nav ul {
+    justify-content: space-between;
+}
+/* -----Tablet Footer------*/
+footer .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 65%; /*198px -> around 200 in psd*/
+    text-align: center;
+    flex-flow: row wrap;
+} 
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+footer .address-content {
+    margin-bottom: 0; /*44px*/
+}
+footer h3 {
+   margin-bottom: 38px;
+}
+
+} 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
@@ -262,4 +771,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-

@@ -7,12 +7,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="apple-touch-icon" href="../icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/602f49c446.js" crossorigin="anonymous"></script>
 
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -28,8 +33,10 @@
         <div class="content-wrapper">
 
             <!----------LOGO-------------->
-            <a href="#" target="_blank"><img src="" alt="Unplugged Logo"></a>
-            <div class="header-divider"></div>
+            <figure>
+                <a class="logo" href="#" target="_blank"><img src="img/Vector Smart Object1.png" alt="Unplugged Logo"></a>
+            </figure>
+            <div class="divider"></div>
 
             <!----------NAVIGATION BAR-------------->
             <nav>
@@ -62,10 +69,10 @@
                     <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
                 </div>
 
-                <div class="form-imput">
+                <div class="form-input-content">
                     <h3>Find out more</h3>
-                    <input type="text" name="name" value="name@email.com">
-                    <input type="button" value="DOWNLOAD ITINERARY">
+                    <input class="email-space" type="text" name="name" value="name@email.com">
+                    <input class="buttom" type="button" value="DOWNLOAD ITINERARY">
                 </div>
             </div>
         </aside>
@@ -73,33 +80,38 @@
         <!----------FEATURES OF THE RETREAT-------------->
         <section class="features">
             <div class="content-wrapper">
+                <h2>Have the work week you always</br> 
+                    dreamed of — <br>
+                    without the bad wifi.</h2>
                 <div class="features-content">
                     <article>
-                        <p class="feature-icons">Campground</p>
+                        <p class="feature-icons">
+                            <i class="fas fa-campground"></i>
+                        </p>
                         <p class="feature-info">Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
                     </article>
                     <article>
-                        <p class="feature-icons">bed</p>
+                        <p class="feature-icons"><i class="fas fa-bed"></i></p>
                         <p class="feature-info">12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4
                             breakout rooms.</p>
                     </article>
                     <article>
-                        <p class="feature-icons">food</p>
+                        <p class="feature-icons"><i class="fas fa-utensils"></i></p>
                         <p class="feature-info">Private chef team providing on demand meals - just like your team
                             kitchen.</p>
                     </article>
                     <article>
-                        <p class="feature-icons">shoes</p>
+                        <p class="feature-icons"><i class="fas fa-shoe-prints"></i></p>
                         <p class="feature-info">5 outdoor obstacle courses, including private beach ½ mile from
                             bungalow.</p>
                     </article>
                     <article>
-                        <p class="feature-icons">smile</p>
+                        <p class="feature-icons"><i class="fas fa-smile"></i></p>
                         <p class="feature-info">Retreat facilitator to manage your day to day activities so you all get
                             a chance to reset.</p>
                     </article>
                     <article>
-                        <p class="feature-icons">wifi</p>
+                        <p class="feature-icons"><i class="fas fa-wifi"></i></p>
                         <p class="feature-info">Dedicated computer room for times that you must wifi.</p>
                     </article>
                 </div>
@@ -111,9 +123,12 @@
             <div class="content-wrapper">
                 <h2>Be a better team in 5 days, like these.</h2>
                 <article class="reviews-content">
-                    <div>
-                        <h3>LaCrue Bottling Co.October 2019</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <figure>
+                            <img src="img/omar-lopez-296944-unsplash.png" alt="Happy and refreshed team of  a previous retreat">
+                        </figure>
+                        <div>
+                            <h3>LaCrue Bottling Co.</br> October 2019</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore
                             et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -121,8 +136,8 @@
                             commodo consequat. Duis
                             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                             pariatur.
-                        </p>
-                    </div>
+                            </p>
+                        </div>
                 </article>
             </div>
         </section>
@@ -135,12 +150,12 @@
         <div class="content-wrapper">
             <div class="footer-content">
 
-                <!----------CONTACT ADDRESS-------------->
-                <address class="address">
+                <!----------ADDRESS-------------->
+                <address>
                     <h3>Contact</h3>
                     <div class="address-content">
-                        <p>555-555-5555</p>
-                        <a href="" target="_blank">hello@unplugged.com</a>
+                        <p class="address-flex-item">555-555-5555</p>
+                        <a class="address-flex-item" href="" target="_blank">hello@unplugged.com</a>
                     </div>
                 </address>
 
@@ -148,12 +163,9 @@
                 <div class="social">
                     <h3>Social</h3>
                     <div class="social-content">
-                        <p><a href="https://www.facebook.com/juliana.telles.96742" target="_blank"><img src=""
-                                    alt="Facebook Icon"></a></p>
-                        <p><a href="https://twitter.com/JuTelles_Dev" target="_blank"><img src=""
-                                    alt="Twitter Icon"></a></p>
-                        <p><a href="https://www.instagram.com/jutelles_dev/" target="_blank"><img src=""
-                                    alt="Instagram Icon"></a></p>
+                        <p><a href="https://www.facebook.com/juliana.telles.96742" target="_blank"><i class="fab fa-facebook-f"></i></a></p>
+                        <p><a href="https://twitter.com/JuTelles_Dev" target="_blank"><i class="fab fa-twitter"></i></a></p>
+                        <p><a href="https://www.instagram.com/jutelles_dev/" target="_blank"><i class="fab fa-instagram"></i></a></p>
                     </div>
                 </div>
 
@@ -169,12 +181,12 @@
 
     <!-----------------------------SCRIPTS--------------------------------->
 
-    <script src="../js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-    <script src="../js/plugins.js"></script>
-    <script src="../js/main.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
