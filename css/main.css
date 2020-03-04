@@ -96,8 +96,7 @@ textarea {
 
 html {
   font-size: 16px;
-  width: 100%;
-  /*360px*/
+  width: 100%; /*360px*/
   height: 100%;
   background-color: #202322;
 }
@@ -105,12 +104,10 @@ html {
 body {
   background-color: #202322;
   color: #e2e3ed;
-  font-size: 1em;
-  /*16px*/
+  font-size: 1em; /*16px*/
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: normal;
-  width: 100%;
-  /*360px*/
+  width: 100%; /*360px*/
   height: 100%;
 }
 
@@ -147,7 +144,7 @@ h2 {
 h3 {
   font-size: 1.125em;
   /*18px*/
-  margin-bottom: 1em;
+  margin-bottom: 0.9em;
   /*18px*/
   line-height: 1em;
   /*18px*/
@@ -157,12 +154,13 @@ p {
   font-size: 0.875em;
   /*14px*/
   margin: 0;
-  line-height: 1.125;
+  line-height: 1.3em;
   /*18px*/
 }
 
 img {
   width: 100%;
+  margin: 0;
   /*100% of its parent*/
 }
 
@@ -627,19 +625,23 @@ FAQ PAGE
   .content-wrapper {
     padding: 100px 0;
     width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: flex-start;
   }
   h1 {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3em; /*48px*/
+    line-height: 1em; /*48px*/
   }
   h2 {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 2.25em; /*36px*/
+    line-height: 1.33em; /*48px*/
   }
   h3 {
-    font-size: 24px;
-    line-height: 30px;
-    margin-bottom: 20px;
+    font-size: 1.5em; /*24px*/
+    line-height: 1.25em; /*30px*/
+    margin-bottom: 0.8em;  /*20px;*/
   }
   /* ==================Tablet Header & Footer - all pages ======================= */
   /* ----Tablet Header-----*/
@@ -650,10 +652,11 @@ FAQ PAGE
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
-    padding: 30px 60px;
+    padding: 1.875em 3.75em; /*30px 60px;*/
   }
   header nav {
     width: 25%;
+    max-width: 170px;
   }
   header nav ul {
     justify-content: space-between;
@@ -672,7 +675,7 @@ FAQ PAGE
     width: 65%;
     text-align: center;
     flex-flow: row wrap;
-    padding: 80px;
+    padding: 5em; /*80px*/
   }
   footer .footer-content {
     display: flex;
@@ -683,16 +686,16 @@ FAQ PAGE
     /*44px*/
   }
   footer h3 {
-    margin-bottom: 38px;
+    margin-bottom: 1.6em;  /*38px*/
   }
   /* ================== tablet homepage styles ======================= */
   /*----- Tablet Hero Area------*/
   .hero {
-    min-height: 600px;
+    min-height: 37.5em; /*600px*/
   }
   /*------- Tablet Aside ------- */
   aside .content-wrapper {
-    padding: 50px 0;
+    padding: 3.125em 0; /*50px 0*/
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: row nowrap;
@@ -703,47 +706,51 @@ FAQ PAGE
     margin: 0;
   }
   aside .form-content {
-    padding-right: 32px;
+    padding-right: 2em; /*32px*/
   }
   /* -----Tablet Features Section------*/
+  .features h2 {
+    width: 100%;
+  } 
   .features-content {
     padding: 0;
+    width: 100%;
+    justify-content: space-around;
   }
   .features article {
     width: 33%;
-    /*194.4px -> 60% from 324px*/
+    max-width: 230px;
   }
   .features p i {
-    font-size: 72px;
-    /*60px*/
+    font-size: 4.5em ; /*72px*/
   }
   /* -----Tablet Reviews------*/
   .reviews h2 {
-    width: 80%;
+    width: 100%;
   }
   .reviews article {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
   }
   .reviews article figure, .reviews article .reviews-text {
-    width: 49%;
+    width: 48%;
   }
   .reviews h3 {
     width: 80%;
-    /*162px*/
-    margin: 0 0 16px 0;
-  }
+    margin:  0 0 1.5em 0; /*0 0 16px 0;*/
+  } 
   /* ================== tablet About Page styles ======================= */
   .about-main h2 {
-    margin-bottom: 24px;
+    margin-bottom: 1em; /*36px*/
     width: 100%;
   }
   .mission .content-wrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    max-width: 800px;
+    max-width: 800px;  /*50em*/
   }
   .mission-content {
     display: flex;
@@ -753,6 +760,7 @@ FAQ PAGE
   }
   .mission-content p {
     width: 45%;
+    margin-top: 1em;
   }
   .map figure {
     padding-bottom: 45%;
@@ -766,7 +774,7 @@ FAQ PAGE
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    max-width: 800px;
+    max-width: 800px;  /*50em*/
   }
   .contact address {
     display: flex;
@@ -776,6 +784,7 @@ FAQ PAGE
   }
   .contact-infos {
     width: 45%;
+    margin-top: 1em;
   }
   /* ================== tablet Faq Page styles ======================= */
   .faq {
@@ -783,11 +792,10 @@ FAQ PAGE
     align-items: flex-start;
   }
   .faq h2 {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
   .faq .content-wrapper {
-    height: 100%;
-    padding: 80px 0;
+    padding: 5em 0; /*80px 0*/
   }
   .faq-content {
     justify-content: space-between;
@@ -799,8 +807,9 @@ FAQ PAGE
     height: 100%;
   }
   .questions h3 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 0.875em; /*14px*/
+    line-height: 1.3em; /*18px*/
+    margin-bottom: 1.3em; /*18px*/
   }
 }
 
@@ -813,30 +822,30 @@ FAQ PAGE
   }
 
   h1 {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 3.75em;  /*60px*/
+    line-height: 1em;  /*60px*/
   }
 
   h2 {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3em;  /*48px*/
+    line-height: 1em;  /*48px*/
   }
 
   h3 {
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 20px;
+    font-size: 1.875em; /*30px*/
+    line-height: 1em; /*30px*/
+    margin-bottom: 0.66em; /*20px*/
   }
 
   p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125em; /*18px*/
+    line-height: 1.33em; /*24px*/
   }
 
   /* ===============Desktop Header & Footer - all pages ======================= */
   /* ----Desktop Header-----*/
   header .content-wrapper {
-    padding: 30px 120px;
+    padding: 1.875em 7.5em; /*30px 120px*/
   }
 
   header nav {
@@ -844,7 +853,7 @@ FAQ PAGE
   }
 
   footer .content-wrapper {
-    max-width: 900px;
+    max-width: 900px;  /*56.25em*/
   }
 
   /* ==================Desktop homepage styles ======================= */
@@ -856,7 +865,7 @@ FAQ PAGE
   /* -----Desktop Features Section------*/
   .features-content {
     justify-content: space-between;
-    margin-top: 68px;
+    margin-top: 4.25em; /*68px*/
   }
 
   .features article {
@@ -864,28 +873,38 @@ FAQ PAGE
   }
 
   .features h2 {
-    font-size: 36px;
+    font-size: 2.25em; /*36px*/
+    width: 80%;
   }
 
   /* -----Desktop Reviews------*/
-  .reviews article {
-    justify-content: space-around;
-  }
 
   .reviews h2 {
-    padding-bottom: 50px;
-    font-size: 36px;
+    font-size: 2.25em; /*36px*/
+    padding-bottom: 1.4em; /*50px*/
   }
 
-  .reviews article .reviews-text {
+  .reviews-text {
     width: 42%;
   }
 
   /* ================== Desktop About Page styles ======================= */
+  .about-main h2 {
+    margin-bottom: 0.4em; /*14px*/
+    width: 100%;
+  }
+  .mission .content-wrapper {
+    max-width: 1000px;
+  }
   .map figure {
     padding-bottom: 30%;
   }
-
+  .contact .content-wrapper {
+    max-width: 1000px;
+  }
+  .contact address {
+    justify-content: flex-start;
+  }
   /* ================== Desktop Faq Page styles ======================= */
   .faq h2 {
     margin-bottom: 1%;
@@ -893,19 +912,19 @@ FAQ PAGE
 
   .faq p, 
   .faq h3 {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 1.125em; /*18px*/
+    line-height: 1em;  /*18px*/
     margin-bottom: 2%;
   }
 
   .faq .content-wrapper {
-    padding: 80px 0;
-    max-width: 1000px;
+    padding: 5em; /*80px 0*/
+    max-width: 1000px;  /*62.5em*/
   }
   
   .questions {
     width: 45%;
-    max-width: 700px;
+    max-width: 700px;  /*43.75em*/
     margin-bottom: 1%;
   }
 }
