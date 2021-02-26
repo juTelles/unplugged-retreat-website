@@ -872,6 +872,7 @@ input[type=button] {
   .features-content {
     justify-content: space-between;
     margin-top: 4.25em;  /*68px*/
+    max-width: 1070px;
   }
 
   .features article {
